@@ -28,7 +28,7 @@ const submit = () => {
             question.itemBody.choiceInteraction[0].simpleChoice.forEach((choice) => {
                 console.log(correctAnswerCode);
                 if(choice._identifier === correctAnswerCode) {
-                    correctResponse = choice.__text.replace(/<[^>]*>?/gm, '')
+                    correctResponse = choice.__text
                 }
             })
 
